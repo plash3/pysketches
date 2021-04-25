@@ -1,6 +1,8 @@
 import sys
 from typing import List
 
+# https://leetcode.com/problems/maximal-rectangle/
+
 def maximalRectangle(matrix: List[List[str]]) -> int:
     def largest_rectangle_under_histogram(heights: List[int]) -> int:
         max_area = 0

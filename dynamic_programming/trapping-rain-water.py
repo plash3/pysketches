@@ -2,6 +2,8 @@ import sys
 import heapq
 from typing import List
 
+# https://leetcode.com/problems/trapping-rain-water-ii/
+
 def trap(heightMap: List[List[int]]) -> int:
     m = len(heightMap)
     if m == 0:

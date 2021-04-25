@@ -1,5 +1,7 @@
 import sys
 
+# https://leetcode.com/problems/cracking-the-safe/
+
 def crackSafe(n: int, k: int) -> str:
     # De Bruijn sequence
     def recurse(i):

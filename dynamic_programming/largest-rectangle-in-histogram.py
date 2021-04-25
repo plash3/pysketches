@@ -1,7 +1,9 @@
 import sys
 from typing import List
 
-def largest_rectangle_under_histogram(heights: List[int]) -> int:
+# https://leetcode.com/problems/largest-rectangle-in-histogram/
+
+def largest_rectangle_in_histogram(heights: List[int]) -> int:
     max_area = 0
     stack = [] # stack of pairs: (index, height)
     for i, h in enumerate(heights):
@@ -18,12 +20,12 @@ def largest_rectangle_under_histogram(heights: List[int]) -> int:
 
     return max_area
 
-def test_largest_rectangle_under_histogram():
+def test_largest_rectangle_in_histogram():
     heights = [2,1,5,6,2,3]
-    print(largest_rectangle_under_histogram(heights))
+    print(largest_rectangle_in_histogram(heights))
 
 def main():
-    test_largest_rectangle_under_histogram()
+    test_largest_rectangle_in_histogram()
 
 if __name__ == '__main__':
     sys.exit(main())

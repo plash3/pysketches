@@ -1,5 +1,9 @@
 import sys
 
+# https://leetcode.com/problems/longest-duplicate-substring/
+# https://cp-algorithms.com/string/suffix-array.html
+# https://www.cs.helsinki.fi/u/tpkarkka/opetus/11s/spa/lecture10.pdf
+
 def longest_common_substring(S: str) -> str:
     m = len(S)
     p = [0 for i in range(m)]
